@@ -1,13 +1,14 @@
+import java.util.*;
 public class SwitchErrors
 {
 	public static void main(String[] args)
 	{
-		Scanner keyboard = new Scanner(System.out);
+		Scanner keyboard = new Scanner(System.in);
 
 		System.out.println("Key: 1=blue, 2=red, 3=green");
 		System.out.print("Enter an number and I'll return ");
 		System.out.print(" the corresponding color. ");
-		number = keyboard.nextInt();
+		int number = keyboard.nextInt();
 
 		switch(number)
 		{
@@ -19,6 +20,7 @@ public class SwitchErrors
 				break;
 			case 3:
 				System.out.println("You choose green!");
+				break;
 			default:
 				System.out.println("Color not available!");
 				break;
